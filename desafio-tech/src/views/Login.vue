@@ -5,7 +5,7 @@
       <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label d-flex justify-content-start">Usuário</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite o nome de usuário">
+          <input class="form-control" id="exampleInputEmail1" placeholder="Digite o nome de usuário">
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label d-flex justify-content-start">Senha</label>
