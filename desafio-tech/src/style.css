@@ -1,0 +1,13 @@
+:root {
+  --primary: #4F0D84;
+}
+
+.btn_gradient_1 {
+  color: #fff;
+  background: linear-gradient(98.96deg, #548AD8 16.92%, #8A4BD3 85.29%);
+}
+
+.btn_gradient_2 {
+  color: #fff;
+  background: linear-gradient(98.96deg, #F33E62 16.92%, #F79334 85.29%);
+}
