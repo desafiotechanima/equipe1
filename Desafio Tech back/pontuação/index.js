@@ -47,4 +47,4 @@ app.get("/pontuacao/data", existeUsuario, (request, response) => {
     return response.jason(pontuacao)
 })
 
-app.listen(3000);
+app.listen(3001);

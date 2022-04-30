@@ -2,23 +2,24 @@ const conexao = require("../infraestrutura/conexao");
 
 class Usuario {
   adiciona(usuario, res) {
-    const usuarioEhValido = usuario.nome.length >= 5;
+    console.log(usuario);
+    // const usuarioEhValido = usuario.nome.length >= 5;
 
-    const validacoes = [
-      {
-        nome: "usuario",
-        valido: usuarioEhValido,
-        mensagem: "usuario deve ter pelo menos cinco caracteres",
-      },
-    ];
+    // const validacoes = [
+    //   {
+    //     nome: "usuario",
+    //     valido: usuarioEhValido,
+    //     mensagem: "usuario deve ter pelo menos cinco caracteres",
+    //   },
+    // ];
 
-    const erros = validacoes.filter((campo) => !campo.valido);
-    const existemErros = erros.length;
+    // const erros = validacoes.filter((campo) => !campo.valido);
+    // const existemErros = erros.length;
 
-    if (existemErros) {
-      res.status(400).json(erros);
-    } else {
-      const sql = "INSERT INTO usuarios SET ?";
+    // if (existemErros) {
+    //   res.status(400).json(erros);
+    // } else {
+      const sql = `INSERT INTO desafio.Usuarios (nome, nomeFilho, email) VALUES ("${usuario.nome}", "${usuario.nomeFilho}", "${usuario.email}");`;
 
       conexao.query(sql, (erro) => {
         if (erro) {
@@ -27,7 +28,7 @@ class Usuario {
           res.status(201).json(usuario);
         }
       });
-    }
+    // }
   }
 
   lista(res) {

@@ -1,8 +1,12 @@
 const Usuario = require("../models/usuarios");
 
 module.exports = (app) => {
+  
   app.get("/usuarios", (req, res) => {
     Usuario.lista(res);
+    res.status(200).json({
+      message: 'Error',
+    });
   });
 
   app.get("/usuarios/:id", (req, res) => {
