@@ -18,7 +18,9 @@
         </div>
 
         <div> Ou </div>
-        <button type="button" class="mt-2 btn text-white  btn_gradient_2">Crie seu login</button>
+          <router-link to="/cadastro">
+            <button type="button" class="mt-2 btn text-white  btn_gradient_2">Crie seu login</button>
+          </router-link>
       </form>
     </div>
   </div>
