@@ -4,7 +4,7 @@
   "description": "Desafio Tech Anima",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Catia Larissa Ramos",
   "license": "ISC",
@@ -14,5 +14,8 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.16",
     "root": "^3.2.0"
+  },
+  "devDependencies": {
+    "jest": "^28.0.3"
   }
 }
