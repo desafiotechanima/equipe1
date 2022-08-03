@@ -129,5 +129,6 @@ export default {
   border-radius: 50%;
   width: 240px;
   height: 240px;
+  background-color:Plum;
 }
 </style>
